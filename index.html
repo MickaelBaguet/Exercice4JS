@@ -16,16 +16,26 @@
         <script type="text/javascript">
           function formulaire()
           {
-            // Prémière méthode :
-            // Utilisation du document.getElementById('id').value pour avoir la valeur de l'id
+            // Si tout les champs ne sont pas des nombre, on execute le code :
+            if ((isNaN(lastName.value)) && (isNaN(firstName.value)) && (isNaN(city.value)))
+            {
+              // Prémière méthode :
+              // Utilisation du document.getElementById('id').value pour avoir la valeur de l'id
 
-            // var nom = document.getElementById('lastName').value;
-            // var prenom = document.getElementById('firstName').value;
-            // var ville = document.getElementById('city').value;
-            // alert("Nom : " + nom + "\nPrénom : " + prenom + "\nVille : " + ville);
+              // var nom = document.getElementById('lastName').value;
+              // var prenom = document.getElementById('firstName').value;
+              // var ville = document.getElementById('city').value;
+              // alert("Nom : " + nom + "\nPrénom : " + prenom + "\nVille : " + ville);
 
-            // Deuxième méthode: utilisation direct de id.value pour récupérer la valeur
-            alert("Nom : " + lastName.value + "\nPrénom : " + firstName.value + "\nVille : " + city.value);
+              // Deuxième méthode: utilisation direct de id.value pour récupérer la valeur
+              alert("Nom : " + lastName.value + "\nPrénom : " + firstName.value + "\nVille : " + city.value);
+            }
+            // Sinon message d'erreur
+            else
+            {
+              alert("Veuillez entrer des chaines de caractères !");
+            }
+
           }
         </script>
 
