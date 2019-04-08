@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice 4</title>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <form>
+            <label for="lastname">Nom : </label><input type="text" name="lastName" id="lastName"/>
+            <label for="firstname">Prénom : </label><input type="text" name="firstName" id="firstName"/>
+            <label for="city">Ville : </label><input type="text" name="city" id="city"/>
+            <button  name="submit" id="submit" onclick="formulaire()">Valider</button>
+        </form>
+
+        <!-- Fonction prenant les valeur du formulaire et les affiches -->
+        <script type="text/javascript">
+          function formulaire()
+          {
+            // Prémière méthode :
+            // Utilisation du document.getElementById('id').value pour avoir la valeur de l'id
+
+            // var nom = document.getElementById('lastName').value;
+            // var prenom = document.getElementById('firstName').value;
+            // var ville = document.getElementById('city').value;
+            // alert("Nom : " + nom + "\nPrénom : " + prenom + "\nVille : " + ville);
+
+            // Deuxième méthode: utilisation direct de id.value pour récupérer la valeur
+            alert("Nom : " + lastName.value + "\nPrénom : " + firstName.value + "\nVille : " + city.value);
+          }
+        </script>
+
+    </body>
+</html>
